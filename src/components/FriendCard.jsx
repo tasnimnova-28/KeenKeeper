@@ -38,16 +38,17 @@ export default function FriendCard({ friend }) {
       </p>
 
       {/* Tags */}
-      <div className="flex flex-wrap justify-center gap-1 mb-3">
-        {friend.tags.map((tag, index) => (
-          <span
-            key={index}
-            className="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full uppercase tracking-wide"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
+      {/* Tags */}
+<div className="flex flex-wrap justify-center gap-1 mb-3">
+  {friend.tags.map((tag, index) => (
+    <span
+      key={index}
+      className="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full uppercase tracking-wide"
+    >
+      {tag}
+    </span>
+  ))}
+</div>
 
       {/* Status Badge */}
       <span className={`text-xs font-semibold px-4 py-1 rounded-full ${statusStyles[friend.status]}`}>

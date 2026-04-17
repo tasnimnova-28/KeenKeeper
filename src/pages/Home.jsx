@@ -1,18 +1,19 @@
 import { useState, useEffect } from 'react'
 import Banner from '../components/Banner'
 import FriendsGrid from '../components/FriendsGrid'
+import friendsData from '../data/friends.json'
 
 export default function Home() {
   const [friends, setFriends] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      import('../data/friends.json').then(data => {
-        setFriends(data.default)
-        setLoading(false)
-      })
+    const timer = setTimeout(() => {
+      setFriends(friendsData)
+      setLoading(false)
     }, 800)
+
+    return () => clearTimeout(timer)
   }, [])
 
   if (loading) {

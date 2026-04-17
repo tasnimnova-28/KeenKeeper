@@ -72,11 +72,15 @@
     "next_due_date": "2026-03-30"
   },
   {
-    "id": 7,
-    "name": "Aisha Patel",
-    "picture": "https://i.pravatar.cc/150?img=25",
-    "email": "aisha.patel@gmail.com",
-    "days_since_contact": 12,
-    "status": "almost due",
-    "tags": ["book club", "college"],
-    "bio": "We met in a literature class and never stopped discussing books. She recommends the best reads.",
+  "id": 7,
+  "name": "Aisha Patel",
+  "picture": "https://i.pravatar.cc/150?img=25",
+  "email": "aisha.patel@gmail.com",
+  "days_since_contact": 12,
+  "status": "almost due",
+  "tags": ["book club", "college"],
+  "bio": "We met in a literature class and never stopped discussing books. She recommends the best reads.",
+  "goal": 14,
+  "next_due_date": "2026-04-26"
+}
+]
