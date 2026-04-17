@@ -8,13 +8,6 @@ export default function Timeline() {
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState('newest')
 
-  const iconMap = {
-    Call: '📞',
-    Text: '💬',
-    Video: '📹',
-    Meetup: '🤝',
-  }
-
   const filtered = entries
     .filter(e => filter === 'All' || e.type === filter)
     .filter(e =>
@@ -83,7 +76,21 @@ export default function Timeline() {
               key={entry.id}
               className="flex items-center gap-4 bg-white border border-gray-100 rounded-xl px-5 py-4 hover:shadow-sm transition-shadow"
             >
-              <span className="text-2xl">{iconMap[entry.type] || '🤝'}</span>
+
+              {/* ICON */}
+              <span className="text-2xl">
+                {entry.icon ? (
+                  <img
+                    src={entry.icon}
+                    alt={entry.type}
+                    className="w-6 h-6"
+                  />
+                ) : (
+                  '🤝'
+                )}
+              </span>
+
+              {/* TEXT */}
               <div>
                 <p className="text-sm text-gray-800">
                   <span className="font-semibold">{entry.type}</span>
@@ -91,6 +98,7 @@ export default function Timeline() {
                 </p>
                 <p className="text-xs text-gray-400 mt-0.5">{entry.date}</p>
               </div>
+
             </div>
           ))
         )}
