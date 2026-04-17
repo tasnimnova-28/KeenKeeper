@@ -21,7 +21,8 @@ KeenKeeper lets you track your friends, log interactions, and get reminded when 
 2. **Quick Check-In** — Log calls, texts, and video chats directly from a friend's profile with instant toast notifications
 3. **Timeline & Analytics** — Browse your full interaction history with filters, search, and a pie chart showing your communication patterns
 
-## Live Demo
+## Live Demo:
+https://keenkeeperrr.netlify.app/
 
 
 ## GitHub
