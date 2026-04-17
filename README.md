@@ -1,16 +1,29 @@
-# React + Vite
+# KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A relationship management app that helps you stay connected with the people who matter most in your life.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+KeenKeeper lets you track your friends, log interactions, and get reminded when it's time to reach out. Never let an important relationship go cold again.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js (Vite)
+- React Router DOM
+- Tailwind CSS
+- Recharts
+- React Hot Toast
+- Lucide React
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Friend Tracking** — View all your friends in a clean card grid with status indicators showing who needs attention
+2. **Quick Check-In** — Log calls, texts, and video chats directly from a friend's profile with instant toast notifications
+3. **Timeline & Analytics** — Browse your full interaction history with filters, search, and a pie chart showing your communication patterns
+
+## Live Demo
+
+[Live Link Here]
+
+## GitHub
+
